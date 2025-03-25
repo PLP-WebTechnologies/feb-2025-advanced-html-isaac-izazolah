@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #e9ecef;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            display: inline;
+            font-weight: normal;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List (Roman Numerals)</h2>
+    <ol type="I">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Gallery</li>
+        <li>Contact</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/" 
+         alt="Office Setup" width="700">
+
+    <!-- Contact Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Nairobi, Kenya</td>
+            <td>+254701234567</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>Mombasa, Kenya</td>
+            <td>+254712345678</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>Kisumu, Kenya</td>
+            <td>+254723456789</td>
+            <td>mikejohnson@example.com</td>
+        </tr>
+        <tr>
+            <td>Linda Kim</td>
+            <td>Nakuru, Kenya</td>
+            <td>+254734567890</td>
+            <td>lindakim@example.com</td>
+        </tr>
+        <tr>
+            <td>Tom Otieno</td>
+            <td>Eldoret, Kenya</td>
+            <td>+254745678901</td>
+            <td>tomotieno@example.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" minlength="6" required>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown -->
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Rwanda">Rwanda</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <div class="radio-group">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>&nbsp;
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>&nbsp;
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="checkbox-group">
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label>&nbsp;
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>&nbsp;
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+
+</html>
